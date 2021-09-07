@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "751349983012",
+    "project_id": "vaca-project",
+    "storage_bucket": "vaca-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751349983012:android:7a3a97a96469aa497a35b1",
+        "android_client_info": {
+          "package_name": "com.example.vac_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751349983012-9a87lbqdo3ju9qkbv8nrcg7b9i83o8p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL5yv1xkht9t4N9X1IhRHYDfbdFeZE5Mg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751349983012-9a87lbqdo3ju9qkbv8nrcg7b9i83o8p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,7 +6,7 @@
     <data>
        <variable
             name="activity"
-            type="com.example.vac_project.SignUp" />
+            type="com.example.vac_project.activity.foregroundMain.SignUp" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -24,17 +24,17 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="172dp"/>
+            android:layout_marginTop="164dp"/>
 
         <TextView
             android:id="@+id/beforLogin"
-            android:text="@string/ac_have"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/signInGoogle"
+            android:text="@string/ac_have"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            tools:layout_editor_absoluteY="501dp"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/logIn"
@@ -47,28 +47,19 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
-        <Button
-            android:id="@+id/signinnormal"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="@string/join"
-            app:layout_constraintTop_toBottomOf="@id/hello"
-            android:layout_marginTop="136dp"
-            app:layout_constraintStart_toStartOf="parent"
+        <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:layout_width="244dp"
+            android:layout_height="64dp"
+            android:layout_centerInParent="true"
+            android:text="@string/google_sign_up"
+            app:isDarkTheme="true"
             app:layout_constraintEnd_toEndOf="parent"
-            android:fontFamily="@font/nanumsquare_acb"
-            android:textSize="16sp"/>
-        <Button
-            android:id="@+id/signInGoogle"
-            android:layout_width="200dp"
-            android:layout_height="60dp"
-            android:text="@string/google"
-            app:layout_constraintTop_toBottomOf="@id/signinnormal"
-            android:layout_marginTop="28dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:fontFamily="@font/nanumsquare_acb"
-            android:textSize="16sp"/>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="64dp"
+
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

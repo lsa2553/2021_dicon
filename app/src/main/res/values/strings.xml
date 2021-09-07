@@ -10,4 +10,5 @@
     <string name="zihologin">Log in</string>
     <string name="zihosignup">Sign up</string>
     <string name="remember_login">Remember login</string>
+    <string name="_00_00">00:00</string>
 </resources>
