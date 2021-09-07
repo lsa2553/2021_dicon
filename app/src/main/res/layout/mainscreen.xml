@@ -5,6 +5,9 @@
 
     <data>
 
+        <variable
+            name="nowSec"
+            type="Integer" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,8 +24,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="200dp"
             android:indeterminate="false"
-            android:progress="12"
-            android:max="48"
+            android:progress="@{nowSec}"
+            android:max="1440"
             android:progressBackgroundTint="@color/skyblue"
             android:progressDrawable="@drawable/progressback"
             android:progressTint="@color/blue100" />

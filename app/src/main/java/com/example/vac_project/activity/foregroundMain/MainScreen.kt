@@ -11,6 +11,7 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
@@ -21,6 +22,7 @@ import com.example.vac_project.databinding.ActivityMainBinding
 import com.example.vac_project.databinding.MainscreenBinding
 import java.text.SimpleDateFormat
 import java.util.*
+import kotlin.concurrent.timer
 
 class MainScreen : AppCompatActivity() {
 
@@ -32,17 +34,24 @@ class MainScreen : AppCompatActivity() {
 
         registerReceiver(object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
-                val calendar = Calendar.getInstance()
-                val time = Date(System.currentTimeMillis())
-                val timeFormat = SimpleDateFormat("HH:mm",)
-                binding.number.text = timeFormat.format(time)
-                binding.progressbar.progress = calendar.get(Calendar.HOUR_OF_DAY) + calendar.get(Calendar.MINUTE) / 30
-
+                setProgressByTime()
             }
         }, IntentFilter(Intent.ACTION_TIME_TICK))
+    }
 
+    override fun onStart() {
+        super.onStart()
+        setProgressByTime()
+    }
 
-//        binding.progressbar.progress = calendar.get(Calendar.HOUR_OF_DAY) + calendar.get(Calendar.MINUTE) / 30
+    private fun Calendar.getMinuteOfDay(): Int =
+        get(Calendar.HOUR_OF_DAY) * 60 + get(Calendar.MINUTE)
 
+    private fun setProgressByTime() {
+        val now = Calendar.getInstance()
+
+        binding.number.text =
+            SimpleDateFormat("HH:mm", Locale.KOREAN).format(now.time)
+        binding.nowSec = now.getMinuteOfDay()
     }
 }
