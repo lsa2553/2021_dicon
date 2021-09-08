@@ -18,9 +18,11 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_mainscreen.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.23016187140245978" />
+        <entry key="app/src/main/res/layout/bottomsheet.xml" value="0.1713815789473684" />
         <entry key="app/src/main/res/layout/circle.xml" value="0.17927631578947367" />
         <entry key="app/src/main/res/layout/login.xml" value="0.3734375" />
         <entry key="app/src/main/res/layout/mainscreen.xml" value="0.16081357429333" />
+        <entry key="app/src/main/res/layout/modal_bottom_sheet_layout.xml" value="0.11182934712346478" />
         <entry key="app/src/main/res/layout/sibal.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/signin.xml" value="0.3734375" />
         <entry key="app/src/main/res/layout/signup.xml" value="0.25" />

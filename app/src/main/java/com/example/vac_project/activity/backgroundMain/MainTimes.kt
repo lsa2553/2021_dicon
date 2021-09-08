@@ -9,13 +9,12 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.vac_project.R
 import com.example.vac_project.databinding.ActivityMainBinding
-import com.example.vac_project.databinding.MainscreenBinding
 import java.text.SimpleDateFormat
 import java.util.*
 
 class MainTimes : AppCompatActivity() {
 
-    lateinit var binding: MainscreenBinding
+    lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
