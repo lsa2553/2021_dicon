@@ -41,18 +41,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/login"
-            android:textColor="@color/purple_500"
+            android:textColor="@color/blue100"
             android:background="#00ff0000"
             app:layout_constraintTop_toBottomOf="@id/beforLogin"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
         <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:id="@+id/SignIn_Button"
             android:layout_width="244dp"
             android:layout_height="64dp"
             android:layout_centerInParent="true"
             android:text="@string/google_sign_up"
-            app:isDarkTheme="true"
+            app:isDarkTheme="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

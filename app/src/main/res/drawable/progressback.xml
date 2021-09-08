@@ -3,11 +3,11 @@
     <item android:id="@android:id/background">
         <shape
             android:innerRadiusRatio="2.71"
-            android:thicknessRatio="7.6"
+            android:thicknessRatio="20"
             android:shape="ring"
             android:useLevel="false"
             android:type="sweep">
-            <solid android:color="#9E9E9E" />
+            <solid android:color="#B5CED9"/>
         </shape>
     </item>
 
@@ -17,7 +17,7 @@
             android:toDegrees="270">
             <shape
                 android:innerRadiusRatio="2.71"
-                android:thicknessRatio="7.6"
+                android:thicknessRatio="20"
                 android:shape="ring"
                 android:angle="0"
                 android:type="sweep">

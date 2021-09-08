@@ -11,4 +11,7 @@
     <color name="blue100">#519ABA</color>
     <color name="blue200">#E0F6FF</color>
     <color name="blue300">#AEDDFF</color>
+    <color name="proback">#9FB5BF</color>
+    <color name="profore">#BCE0ED</color>
+    <color name="back">#B5CED9</color>
 </resources>

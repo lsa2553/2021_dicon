@@ -11,4 +11,6 @@
     <string name="zihosignup">Sign up</string>
     <string name="remember_login">Remember login</string>
     <string name="_00_00">00:00</string>
+    <string name="todo">오늘의 할 일</string>
+    <string name="ts">터치잠금</string>
 </resources>

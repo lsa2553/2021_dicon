@@ -1,28 +1,18 @@
 package com.example.vac_project.activity.foregroundMain
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import android.nfc.Tag
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
-import androidx.core.app.NotificationCompat
-import androidx.core.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.vac_project.R
-import com.example.vac_project.databinding.ActivityMainBinding
 import com.example.vac_project.databinding.MainscreenBinding
 import java.text.SimpleDateFormat
 import java.util.*
-import kotlin.concurrent.timer
+import java.util.Locale
+
 
 class MainScreen : AppCompatActivity() {
 
@@ -37,6 +27,11 @@ class MainScreen : AppCompatActivity() {
                 setProgressByTime()
             }
         }, IntentFilter(Intent.ACTION_TIME_TICK))
+
+
+        val currentTime = Calendar.getInstance().time
+        binding.date.text = SimpleDateFormat("yyyy.MM.dd", Locale.getDefault()).format(currentTime)
+        binding.yoil.text = SimpleDateFormat("EE요일", Locale.KOREAN).format(currentTime)
     }
 
     override fun onStart() {
@@ -53,5 +48,8 @@ class MainScreen : AppCompatActivity() {
         binding.number.text =
             SimpleDateFormat("HH:mm", Locale.KOREAN).format(now.time)
         binding.nowSec = now.getMinuteOfDay()
+
+
     }
+
 }
