@@ -5,8 +5,10 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.Bundle
+import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
 import com.example.vac_project.R
 import com.example.vac_project.databinding.ActivityMainBinding
 import java.text.SimpleDateFormat
@@ -14,13 +16,13 @@ import java.util.*
 import java.util.Locale
 
 
-class MainScreen : AppCompatActivity() {
-    private lateinit var binding: ActivityMainBinding
+class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this,R.layout.bottomsheet)
-//        binding = DataBindingUtil.setContentView(this, R.layout.bottomsheet)
+        binding = setContentView(this,R.layout.activity_main)
         registerReceiver(object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
                 setProgressByTime()
@@ -47,6 +49,8 @@ class MainScreen : AppCompatActivity() {
         binding.number.text =
             SimpleDateFormat("HH:mm", Locale.KOREAN).format(now.time)
         binding.nowSec = now.getMinuteOfDay()
+
+
 
 
 
