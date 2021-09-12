@@ -11,6 +11,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.DataBindingUtil.setContentView
 import com.example.vac_project.R
 import com.example.vac_project.databinding.ActivityMainBinding
+import com.google.android.material.bottomappbar.BottomAppBar
+import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Locale
@@ -18,11 +21,13 @@ import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
-
+    val modalBottomSheet = ModalBottomSheet()
+//
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = setContentView(this,R.layout.activity_main)
+
         registerReceiver(object : BroadcastReceiver() {
             override fun onReceive(context: Context, intent: Intent) {
                 setProgressByTime()
@@ -50,10 +55,14 @@ class MainActivity : AppCompatActivity() {
             SimpleDateFormat("HH:mm", Locale.KOREAN).format(now.time)
         binding.nowSec = now.getMinuteOfDay()
 
-
-
-
-
+//        val dialogView = layoutInflater.inflate(R.layout.modal_bottom_sheet_content, null)
+//        val dialog = BottomSheetDialog(this)
+//        dialog.setContentView(dialogView)
+//        dialog.show()
+//
+//        val bottomSheetFragment = BottomSheetFragment()
+//        bottomSheetFragment.show(supportFragmentManager, bottomSheetFragment.tag)
     }
+
 
 }

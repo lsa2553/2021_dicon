@@ -16,7 +16,7 @@
         <entry key="app/src/main/res/drawable/sign_button_radius.xml" value="0.17362706130703603" />
         <entry key="app/src/main/res/font/font.xml" value="0.29791666666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.17477203647416414" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13385837068147508" />
         <entry key="app/src/main/res/layout/activity_mainscreen.xml" value="0.27717391304347827" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.10164369332034724" />
         <entry key="app/src/main/res/layout/bottom_sheet.xml" value="0.1" />
@@ -24,6 +24,7 @@
         <entry key="app/src/main/res/layout/circle.xml" value="0.17927631578947367" />
         <entry key="app/src/main/res/layout/login.xml" value="0.3734375" />
         <entry key="app/src/main/res/layout/mainscreen.xml" value="0.16081357429333" />
+        <entry key="app/src/main/res/layout/modal_bottom_sheet_content.xml" value="0.13355263157894737" />
         <entry key="app/src/main/res/layout/modal_bottom_sheet_layout.xml" value="0.11182934712346478" />
         <entry key="app/src/main/res/layout/setting.xml" value="0.20559210526315788" />
         <entry key="app/src/main/res/layout/sibal.xml" value="0.36041666666666666" />
