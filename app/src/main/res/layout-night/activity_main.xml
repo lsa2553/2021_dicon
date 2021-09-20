@@ -25,6 +25,16 @@
             android:background="@drawable/homebackgr">
 
             <ImageView
+                android:layout_width="278dp"
+                android:layout_height="278dp"
+                app:layout_constraintBottom_toBottomOf="@id/progressbar"
+                app:layout_constraintEnd_toEndOf="@id/progressbar"
+                app:layout_constraintStart_toStartOf="@id/progressbar"
+                app:layout_constraintTop_toTopOf="@id/progressbar"
+                android:src="@drawable/ic_timecircle"
+                />
+
+            <ImageView
                 android:layout_width="244dp"
                 android:layout_height="244dp"
                 app:layout_constraintBottom_toBottomOf="@id/progressbar"
@@ -88,8 +98,6 @@
 
 
 
-
-
             <TextView
                 android:id="@+id/number"
                 android:layout_width="wrap_content"
@@ -130,7 +138,19 @@
                 android:background="@drawable/bottomview">
 
 
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:flow_verticalBias="0">
+                </androidx.recyclerview.widget.RecyclerView>
+
             </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
