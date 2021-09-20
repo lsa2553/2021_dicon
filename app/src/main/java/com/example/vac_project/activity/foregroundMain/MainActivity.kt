@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity(){
         val adapter = TodoAdapter(todolist)
         binding.rvTodos.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.button?.setOnClickListener {
-            adapter.addItem(binding.editText.text.toString())
+//            adapter.addItem(binding.editText.text.toString())
 
         }
         binding.rvTodos.setHasFixedSize(true)
