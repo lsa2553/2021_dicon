@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity(){
         binding.rvTodos.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         binding.button?.setOnClickListener {
             adapter.addItem(binding.editText.text.toString())
+
         }
         binding.rvTodos.setHasFixedSize(true)
         binding.rvTodos.adapter = TodoAdapter(todolist)
